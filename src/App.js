@@ -7,12 +7,17 @@ import { Filter } from "./components/Filter";
 import { Summary } from "./components/Summary";
 function App() {
   return (
-    <Provider store={Store}>
-      <Header/>
+    <Provider store={Store} className="bg-gray-200 min-h-screen py-10">
+      {/* <Header/>
       <AddTransaction/>
       <Filter/>
       <TransactionList/>
-      <Summary/> 
+      <Summary/>  */}
+       <Header />
+      <Summary />
+      <AddTransaction />
+      <Filter />
+      <TransactionList />
     </Provider>
   );
 }
